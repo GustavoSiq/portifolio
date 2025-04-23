@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gustavo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+    <div>
+      <h1>Gustavo Alves Siqueira</h1>
+      <p>Desenvolvedor | Estudante de Tecnologia</p>
+    </div>
+    <button onclick="alternarTema()" class="botao-tema">🌙 Modo Escuro</button>
+  </header>
+
+  <section class="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou apaixonado por tecnologia, estou buscando uma transição para o empreendedorismo com foco em software e desenvolvimento web.</p>
+  </section>
+
+  <section class="projetos">
+    <h2>Projetos</h2>
+    <div class="filtros">
+      <button onclick="filtrarProjetos('todos')">Todos</button>
+      <button onclick="filtrarProjetos('web')">Web</button>
+      <button onclick="filtrarProjetos('mobile')">Mobile</button>
+    </div>
+
+    <div class="cards-container">
+      <div class="card" data-categoria="web">
+        <h3>Projeto Web 1</h3>
+        <p>Site feito com HTML, CSS e JS.</p>
+      </div>
+      <div class="card" data-categoria="mobile">
+        <h3>Projeto Mobile 1</h3>
+        <p>App desenvolvido com React Native.</p>
+      </div>
+      <div class="card" data-categoria="web">
+        <h3>Projeto Web 2</h3>
+        <p>Dashboard usando Vue.js e API REST.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <p>Email: gustavosiqueira.pro@gmail.com</p>
+    <p>
+      <a href="https://github.com/GustavoSiq" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/gustavosiqueira8" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Gustavo Alves Siqueira</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
